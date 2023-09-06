@@ -1,16 +1,40 @@
+import { useEffect,useRef } from "react";
 import SubPackageDescCard from "./SubPackageDescCard"
+import {motion, useInView, useAnimation} from "framer-motion"
 
 interface SubPackageCard {
     visible?:boolean;
     onClick?:any;
     data:any;
+    selectedOption:any;
 }
 
-const SubPackageCard = ({visible,onClick,data}:SubPackageCard) => {
-    return (
-        <div className="flex gap-20 items-center justify-center">
+const SubPackageCard = ({visible,onClick,data,selectedOption}:SubPackageCard) => {
 
-            <div className="flex flex-col justify-start items-start h-fit gap-3">
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once:true})
+
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        console.log(isInView);
+        if(isInView) {
+            mainControls.start("visible")
+        }
+    },[isInView])
+
+    return (
+        <div ref={ref} className="flex gap-20 items-center justify-center">
+
+            <motion.div 
+             variants={{
+                hidden: {opacity:0, y:75},
+                visible: {opacity:1, y:0}
+            }}
+            initial="hidden"
+            animate={mainControls}
+            transition={{duration: 0.5, delay: 0.25}}
+            className="flex flex-col justify-start items-start h-fit gap-3">
 
                 <h2 className="font-semibold text-lg">{data.name}</h2>
                 <small className="text-gray-600">{data.prerequisite}</small>
@@ -23,14 +47,16 @@ const SubPackageCard = ({visible,onClick,data}:SubPackageCard) => {
                             key={idx}
                             visible={visible}
                             onClick={onClick} 
-                            data={row}/>
+                            data={row}
+                            selectedOption={selectedOption}
+                        />
                     ))}
                 </div>
                 
-            </div>
+            </motion.div>
 
             <div className="w-[400px] h-[300px] bg-gray-500 border">
-                test
+                
             </div>
 
         </div>

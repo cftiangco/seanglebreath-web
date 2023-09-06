@@ -19,6 +19,7 @@ export const data = {
                     description: 'Whether you are a new diver or a veteran technical diver with thousands of dives, or anything in between, Deep Dive Dubai is what you are looking for. Explore the different sections of our underwater city up to the depths allowed by your certification with open water divers to 20m, advanced to 30m, and trimix-trained technical divers up to 60m. All experiences include one of our professional dive guides to show you around and make sure you get the most out of your experience.',
                     options:[
                         {
+                            id:1,
                             name:"What's Included?",
                             values:[
                                 'All equipment and breathing gases',
@@ -26,6 +27,7 @@ export const data = {
                             ]
                         },
                         {
+                            id:2,
                             name:"Terms & Conditions",
                             values:[
                                 'Be at least 10 years old​',
@@ -34,6 +36,7 @@ export const data = {
                             ]
                         },
                         {
+                            id:3,
                             name:"Diving depth",
                             values:[
                                 'As allowed by certification and recency of experience​',
@@ -79,6 +82,7 @@ export const data = {
                     description: 'Whether you are a new diver or a veteran technical diver with thousands of dives, or anything in between, Deep Dive Dubai is what you are looking for. Explore the different sections of our underwater city up to the depths allowed by your certification with open water divers to 20m, advanced to 30m, and trimix-trained technical divers up to 60m. All experiences include one of our professional dive guides to show you around and make sure you get the most out of your experience.',
                     options:[
                         {
+                            id:1,
                             name:"What's Included?",
                             values:[
                                 'All equipment and breathing gases',
@@ -86,6 +90,7 @@ export const data = {
                             ]
                         },
                         {
+                            id:2,
                             name:"Terms & Conditions",
                             values:[
                                 'Be at least 10 years old​',
@@ -94,6 +99,7 @@ export const data = {
                             ]
                         },
                         {
+                            id:3,
                             name:"Diving depth",
                             values:[
                                 'As allowed by certification and recency of experience​',

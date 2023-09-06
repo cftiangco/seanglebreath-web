@@ -1,6 +1,6 @@
 import './App.css'
-import Home from './pages/home'
-import Programs from './pages/programs'
+import Home from './pages/Home'
+import Programs from './pages/Programs'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 function App() {
