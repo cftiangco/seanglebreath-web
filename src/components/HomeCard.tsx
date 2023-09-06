@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useRef,useEffect } from "react";
 import {motion, useInView, useAnimation} from "framer-motion"
+import { ButtonPrimaryLink,ButtonLink } from "./Button";
 interface IHomeCard {
     location?:any;
     name:string;
@@ -35,17 +36,30 @@ const HomeCard = ({location,name,description,state}:IHomeCard) => {
             className="flex gap-20 items-center justify-center">
                 <div className="w-96 h-60 bg-gray-500">
                     {/* img here */}
+
+                    <div className="flex gap-10 text-white justify-center flex-col w-full  h-full items-center md:hidden">
+                        <Link 
+                            to={location}
+                            state={state} 
+                            className="font-bold text-md md:text-2xl cursor-pointer text-center">{name}</Link>
+                        <div>
+                           <h2>{description.substring(0,20) + '...'}</h2>
+                        </div>
+                        <div>
+                            <ButtonLink label="READ MORE" to={location} state={state}/>
+                        </div>
+                    </div>
                 </div>
-                <div className="w-96 flex justify-between flex-col gap-7">
+                <div className="w-96 justify-between flex-col gap-7 hidden md:flex">
                     <Link 
                         to={location}
                         state={state} 
                         className="font-bold text-2xl cursor-pointer">{name}</Link>
                     <div>
-                        {description}
+                        {description.substring(0,100) + '...'}
                     </div>
                     <div>
-                        <a href="">Read More</a>
+                        <ButtonPrimaryLink label="READ MORE" to={location} state={state}/>
                     </div>
                 </div>
             </motion.div>

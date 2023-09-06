@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer'
 function App() {
   return (
-    <>
+    <div className="">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -13,7 +13,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -1,10 +1,10 @@
-import logo from '../assets/logo-white.png'
+import logo from '../assets/logo-dark.png'
 
 const Footer = () => {
     return (
-        <div className="bg-black h-72 w-full justify-around text-white flex items-center">
+        <div className="bg-gray-100 h-72 w-full text-xs md:text-md justify-around text-gray-700 flex flex-col md:flex-row items-center border-t-2">
             <div className="flex gap-10">
-                <img src={logo} alt="logo" className="w-52 h-24"/>
+                <img src={logo} alt="logo" className="w-22 h-16 md:w-52 md:h-24"/>
 
                 <div>
                     <h2 className="font-bold mb-2">Program and Packages</h2>

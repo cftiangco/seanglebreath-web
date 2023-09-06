@@ -8,7 +8,7 @@ import { SmallSeparator } from "../components/Utils";
 const Home = () => {
     return (
         <>
-            <div className="h-screen w-full bg-gray-500">
+            <div className="h-[420px] w-full bg-gray-500">
                 <Header />
             </div>
 
@@ -39,7 +39,7 @@ const Home = () => {
 
             <SectionText text="OUR SOCIAL PRESENSCE"/>
 
-            <div className="flex justify-center gap-7 my-10">
+            <div className="flex flex-col md:flex-row justify-center gap-7 my-10 mx-20 md:mx-0">
                 <WideButton type={`primary`} label={`Follow us on Facebook`}/>
                 <WideButton type={`test`} label={`Follow us on Instagram`} />
             </div>
