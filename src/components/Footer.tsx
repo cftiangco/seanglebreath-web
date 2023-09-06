@@ -9,11 +9,9 @@ const Footer = () => {
                 <div>
                     <h2 className="font-bold mb-2">Program and Packages</h2>
                     <ul>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                        <li>item 4</li>
-                        <li>item 5</li>
+                        <li>Skindiving 101</li>
+                        <li>Fundive Programs Practice / Live Dive</li>
+                        <li>Line amd Depth Training</li>
                     </ul>
                 </div>
 

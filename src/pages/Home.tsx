@@ -8,7 +8,7 @@ import { SmallSeparator } from "../components/Utils";
 const Home = () => {
     return (
         <>
-            <div className="h-[420px] w-full bg-gray-500">
+            <div className="h-[420px] md:h-screen w-full bg-gray-500">
                 <Header />
             </div>
 
