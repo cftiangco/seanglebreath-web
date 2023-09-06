@@ -1,14 +1,24 @@
+import { Link } from "react-router-dom";
+interface IHomeCard {
+    location?:any;
+    name:string;
+    description:string;
+    state?:any;
+}
 
-const HomeCard = () => {
+const HomeCard = ({location,name,description,state}:IHomeCard) => {
     return (
         <div className="flex gap-20 items-center justify-center">
             <div className="w-96 h-60 bg-gray-500">
                 img
             </div>
             <div className="w-96 flex justify-between flex-col gap-7">
-                <h1 className="font-bold text-2xl">SKINDIVING 101</h1>
+                <Link 
+                    to={location}
+                    state={state} 
+                    className="font-bold text-2xl cursor-pointer">{name}</Link>
                 <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nulla corrupti dicta molestiae. Ipsum ullam obcaecati quisquam iste dignissimos! Et eius dicta ducimus dolor reprehenderit maiores accusantium molestias cum. Accusantium ipsa incidunt dolore officia maxime ut quod ipsam quos repellat?
+                    {description}
                 </div>
                 <div>
                     <a href="">Read More</a>
