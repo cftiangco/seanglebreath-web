@@ -9,14 +9,17 @@ import { SmallSeparator } from "../components/Utils";
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
+import heroImage1 from '../assets/images/hero-back-1.jpg'
+import heroImage2 from '../assets/images/hero-back-2.jpg'
+
 
 const slideImages = [
     {
-      url: '/src/assets/images/hero-back-1.jpg',
+      url: heroImage1,
       caption: "Explore the depths<br/> of your soul through<br/> free diving"
     },
     {
-      url: '/src/assets/images/hero-back-2.jpg',
+      url: heroImage2,
       caption: "Explore the depths<br/> of your soul through<br/> free diving"
     },
   ];
