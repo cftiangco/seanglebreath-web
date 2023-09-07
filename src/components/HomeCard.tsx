@@ -34,7 +34,7 @@ const HomeCard = ({location,name,description,state}:IHomeCard) => {
             animate={mainControls}
             transition={{duration: 1, delay: 0.50}}
             className="flex gap-20 items-center justify-center">
-                <div className="w-96 h-60 bg-gray-500">
+                <div className="w-[4000px] md:w-96 h-60 bg-gray-500">
                     {/* img here */}
 
                     <div className="flex gap-10 text-white justify-center flex-col w-full  h-full items-center md:hidden">

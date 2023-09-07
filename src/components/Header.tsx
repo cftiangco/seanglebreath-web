@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa";
 
 const Header = () => {
     return (
-        <div className='flex justify-between bg-white absolute w-full h-24 items-center'>
+        <div className='flex justify-between bg-white bg-opacity-90 absolute w-full h-24 items-center z-10'>
             <Link to={'/'} className="ms-2 md:ms-20">
                 <img src={logo} alt="logo" width={130}/>
             </Link>
